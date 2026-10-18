@@ -1,0 +1,5 @@
+
+account_id        = "c45e6146159a06eaa0d37e042d3abf2e"
+worker_name       = "student-task-manager"
+kv_namespace_name = "student_tasks"
+environment       = "development"
