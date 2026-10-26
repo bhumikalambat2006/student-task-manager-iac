@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>📚 Student Task Manager</h1>
+      <p>Organize assignments, track progress, and stay productive.</p>
+    </header>
+
+    <section class="panel">
+      <h2 id="formHeading">Add New Task</h2>
+      <form id="taskForm">
+        <label for="title">Task Title</label>
+        <input id="title" type="text" placeholder="Enter assignment or task" required>
+
+        <label for="priority">Priority</label>
+        <select id="priority">
+          <option>Medium</option>
+          <option>High</option>
+          <option>Low</option>
+        </select>
+
+        <label for="status">Status</label>
+        <select id="status">
+          <option>Pending</option>
+          <option>In Progress</option>
+          <option>Completed</option>
+        </select>
+
+        <div class="actions">
+          <button id="saveButton" type="submit">Add Task</button>
+          <button id="cancelButton" type="button" class="secondary" hidden>Cancel Edit</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="panel">
+      <div class="section-heading">
+        <h2>My Tasks</h2>
+        <button id="refreshButton" type="button" class="secondary">Refresh</button>
+      </div>
+      <p id="message" role="status"></p>
+      <div id="taskList"></div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
