@@ -1,0 +1,11 @@
+name = "student-task-manager"
+main = "application/worker-deploy.js"
+compatibility_date = "2026-10-26"
+workers_dev = true
+
+[[kv_namespaces]]
+binding = "TASKS_KV"
+id = "e519ba79770a4294a97e40a828f0ca59"
+
+[vars]
+APP_ENV = "production"
